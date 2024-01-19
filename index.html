@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="maletin.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/e87e340387.js" crossorigin="anonymous"></script>
     <title>Augusto Lorenzo</title>
 </head>
 <body>
     <header> <!-- Inicio Header -->
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="/">
-                    <img src="banderaArg.webp" alt="Bandeera de Argentina">
-                </a>
-            </picture>
+        <nav class="navbar-container">       
+            <img class="bandera-icono" src="banderaArg.webp" alt="Bandeera de Argentina">        
+            <button class="btn-abrir" id="btn-abrir"><i class="bi bi-list"></i></button>
+            <div class="navbar" id="navbarId">
+            <button class="btn-cerrar" id="btn-cerrar"><i class="bi bi-x"></i></button>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="/shop">Inicio<iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                <li class="navbar__item">
+                    <a class="navbar__link with-icon" href="#navbar">Inicio</a>
                 </li>
                 <li>
                     <a class="navbar__link" href="#sobreMi">Sobre mi</a>
@@ -39,7 +39,7 @@
     <div class="container-fichas">
         <a href="https://www.linkedin.com/in/augustol12/"><div class="img-ficha"><i class="fa-brands fa-linkedin-in icon"></i></div></a>
         <a href="https://github.com/Augusto1290"><div class="img-ficha"><i class="fa-brands fa-github icon"></i></div></a>
-        <div class="img-ficha"><i class="fa-solid fa-file icon"></i></div>
+        <a href="CvProgramacion-AugustoLorenzo.pdf" download="CvProgramacion-AugustoLorenzo.pdf"><div class="img-ficha"><i class="fa-solid fa-file icon"></i></div></a>
     </div>
     <div class="container_sobreMi">
         <div class="container_sobreMiTexto">
@@ -163,5 +163,6 @@
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
