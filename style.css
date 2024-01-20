@@ -226,11 +226,7 @@ header{
 }
 
 
-@media screen and(max-width: 700px){
-    .span_presentacion{
-        font-size: 30px;
-    }
-}
+
 .parrafo_presentacion{
     font-family: monospace;
     font-size: var(--font-jumbo);
@@ -240,16 +236,6 @@ header{
     padding-right: 20%;
 }
 
-@media screen and(max-width:800px)
-{
-    .parrafo_presentacion{
-        font-family: monospace;
-        font-size:20px;
-        margin-top: 60px;
-        text-align: center;
-   
-    }
-}
 
 .container-fichas{
     position: absolute;
@@ -300,9 +286,34 @@ header{
     margin-top: 100px;
     margin-bottom: 80px;
 }
-
+.span_presentacion{
+    font-size: 50px;
+}
+.parrafo_presentacion{
+    font-size: var(--font-large)
+}
+@media screen and (max-width:700px){
+    .span_presentacion{
+        font-size: 30px;
+    }
+    .parrafo_presentacion{
+        font-size: var(--font-large)
+    }
+}
     
 }
+
+@media screen and (max-width:400px){
+    .span_presentacion{
+        font-size: 20px;
+    }
+    .parrafo_presentacion{
+        font-size: var(--font-medium)
+    }
+}
+    
+
+
 
 
 .icon{
