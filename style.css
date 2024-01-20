@@ -150,10 +150,8 @@ header{
     }
     .btn-cerrar{
         display: block;
-        width: 40px;
+        width: 60px;
         height: 40px;
-        margin-top: 10px;
-        margin-bottom: 5px;
         cursor: pointer;
         background-color: var(--dark-bg-solid);
         color: var(--light-bg-solid);
@@ -163,7 +161,7 @@ header{
         background-color: var(--dark-bg-solid);
         color: var(--light-bg-solid);
     }
-   
+    
     .navbarClass{
         opacity: 0;
         visibility: hidden;
@@ -174,16 +172,23 @@ header{
         position: absolute;
         top: 0;
         right: 0;
-        bottom: 0;
         background-color: var(--dark-bg-solid);
         padding: 2rem;
         box-shadow: var(--light-bg-solid);
         z-index: 999;
       
-        }
-      .navbarClass .visible{
+    }
+
+         .visible{
         opacity: 1;
         visibility: visible;
+      }
+   
+    .navbar__link{
+        font-size: var(--font-medium);
+        padding: 0;
+        transition: background .3s ease-in-out;
+        border-radius: 5px;
     }
 
     
@@ -378,7 +383,7 @@ header{
     margin-top: 100px;
 }
 } 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 900px){
     .parrafo_sobreMi{
      font-size: var(--font-large);
     }
