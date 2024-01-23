@@ -609,9 +609,17 @@ h1{
 }
 @media screen and (max-width: 500px){
     .container-formContacto{
-       
+        display: block;
         margin: auto;
         width: 70%;
+    }
+    .container-contacto{
+        display: block;
+    }
+
+    .img-gmail{
+       margin-left: 25%;
+
     }
 }
 
@@ -677,9 +685,16 @@ form{
     transition: all .3s ease;
 }
 
+
 @media screen and(min-width:1024px){
     .img-fichas{
         width: 70px;
     }
 }
+
+.img-gmail{
+    width: 50%;
+    height: 50%;
+}
+
 
