@@ -21,7 +21,8 @@ document.getElementById('form')
 
    btn.value = 'Enviando...';
 
-   form.reset();
+   
+
 
    const serviceID = 'default_service';
    const templateID = 'template_9hhgv2g';
@@ -34,4 +35,6 @@ document.getElementById('form')
       btn.value = 'Enviar';
       alert(JSON.stringify(err));
     });
+
+    form.reset();
 });
