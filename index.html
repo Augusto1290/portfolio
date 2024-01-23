@@ -143,7 +143,7 @@
         </div>  
         <div class="container-formContacto">
           
-            <!--   <form action="https://formsubmit.co/bfe47a1f427dda33aa1b7ece0d2aa3d6" method="POST"> 
+                <form id="form"> 
                 <div class="container-input">
                     <label for="Nombre">Nombre</label>
                     <input type="text" id="Nombre" class="input" name="from_name" required>
@@ -154,19 +154,22 @@
                 </div>
                 <div class="container-input">
                     <label for="Mensaje">Mensaje</label>
-                    <textarea type="text" id="Mensaje" class="textarea" name="Mensaje" required></textarea>
+                    <textarea type="text" id="Mensaje" class="textarea" name="message" required></textarea>
                 </div>
                 <div class="container-input">
-                   <input type="submit" class="btn" value="Enviar">
+                   <input id="button" type="submit" class="btn" value="Enviar">
                 </div>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://augusto1290.github.io/portfolio/">
             </form>
-        -->
-         <a class="a-img" href="mailto:augustolorenzo9@gmail.com"><img class="img-gmail" src="gmail.png" alt=""></a>
+        
+        <!-- <a class="a-img" href="mailto:augustolorenzo9@gmail.com"><img class="img-gmail" src="gmail.png" alt=""></a> -->
 
         </div>
     </div>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('9tpP9WAOqiLwP5Mmx')
+  </script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -11,3 +11,27 @@ abrir.addEventListener("click",()=>{
 cerrar.addEventListener("click",()=>{
     nav.classList.remove("visible");
 })
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   form.reset();
+
+   const serviceID = 'default_service';
+   const templateID = 'template_9hhgv2g';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
